@@ -22,9 +22,10 @@ This template sets up a [PostgREST](https://postrest.org) instance with a
 
 -   Click the `Deploy on Railway` button
 -   Set `PGRST_DB_URI` environment variable to `${{ DATABASE_URL }}`.
--   Set `PGRST_DB_ANON_ROLE` environment variable to `anon`.
--   Set `PGRST_JWT_SECRET` environment variable to secure your endpoints.
--   Set `PORT` environment variable to `3000`.
+-   Set `PGRST_DB_ANON_ROLE` environment variable to `anon` to enable anonymous access.
+-   Set `PGRST_JWT_SECRET` environment variable to secure your endpoints. Must be 32 characters or
+    more.
+-   Set `PORT` environment variable to `3000`. Could be any valid port.
 -   Set `PGRST_SERVER_PORT` environment variable to `${{ PORT }}`.
 -   Set a domain to expose your app.
 
